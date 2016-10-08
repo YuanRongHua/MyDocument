@@ -15,6 +15,12 @@ mysql-community-client-5.7.11-1.el7.x86_64.rpm
 **mysql开发部分**  
 mysql-community-devel-5.7.11-1.el7.x86_64.rpm
 
+**mysql-common**  
+mysql-community-common-5.7.11-1.el7.x86_64.rpm
+
+**mysql-libs**  
+mysql-community-libs-5.7.11-1.el7.x86_64.rpm
+
 **查看本机是否安装mysql**  
 rpm -qa|grep mysql
 
