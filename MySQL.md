@@ -1,7 +1,7 @@
 # MySQL #
 
 
-### Red Hat Linux 安装 ###  
+### Red Hat Linux 安装
 
 官网下载  http://dev.mysql.com/downloads/mysql/  
 安装文档  http://dev.mysql.com/doc/refman/5.7/en/linux-installation-rpm.html  
