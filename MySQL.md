@@ -73,13 +73,14 @@ mysql -upig -p123456
 3. 新建用户不能创建数据库  
 新用户需要授予create权限才能创建数据库
 
-### 复制  
+## 复制  
+***
 **创建复制用户**  
 主库和备库都创建该账户  
-CREATE USER 'repl'@'%' IDENTIFIED BY 'MyNewPass4!';    
-GRANT Replication client ON *.* TO 'repl'@'%';    
-GRANT Replication slave ON *.* TO 'repl'@'%';    
-FLUSH PRIVILEGES;
+  `CREATE USER 'repl'@'%' IDENTIFIED BY 'MyNewPass4!';    
+  GRANT Replication client ON *.* TO 'repl'@'%';    
+  GRANT Replication slave ON *.* TO 'repl'@'%';    
+  FLUSH PRIVILEGES;`
 
 
 
