@@ -77,9 +77,9 @@ mysql -upig -p123456
 ***
 **创建复制用户**  
 主库和备库都创建该账户  
-`CREATE USER 'repl'@'%' IDENTIFIED BY 'MyNewPass4!';   
-GRANT Replication client ON *.* TO 'repl'@'%';
-GRANT Replication slave ON *.* TO 'repl'@'%'; 
+`CREATE USER 'repl'@'%' IDENTIFIED BY 'MyNewPass4!';     
+GRANT Replication client ON *.* TO 'repl'@'%';  
+GRANT Replication slave ON *.* TO 'repl'@'%';   
 FLUSH PRIVILEGES;`
 
 
