@@ -6,19 +6,19 @@
 官网下载  http://dev.mysql.com/downloads/mysql/  
 安装文档  http://dev.mysql.com/doc/refman/5.7/en/linux-installation-rpm.html  
 
-**mysql服务端**  
-mysql-community-server-5.7.11-1.el7.x86_64.rpm
+**mysql服务端**    
+mysql-community-server-5.7.11-1.el7.x86_64.rpm  
 
-**mysql客户端**  
-mysql-community-client-5.7.11-1.el7.x86_64.rpm
+**mysql客户端**    
+mysql-community-client-5.7.11-1.el7.x86_64.rpm  
 
-**mysql开发部分**  
+**mysql开发部分**    
 mysql-community-devel-5.7.11-1.el7.x86_64.rpm
 
-**mysql-common**  
+**mysql-common**    
 mysql-community-common-5.7.11-1.el7.x86_64.rpm
 
-**mysql-libs**  
+**mysql-libs**    
 mysql-community-libs-5.7.11-1.el7.x86_64.rpm
 
 **查看本机是否安装mysql**  
@@ -73,6 +73,13 @@ mysql -upig -p123456
 3. 新建用户不能创建数据库  
 新用户需要授予create权限才能创建数据库
 
+### 复制  
+**创建复制用户**  
+主库和备库都创建该账户  
+CREATE USER 'repl'@'%' IDENTIFIED BY 'MyNewPass4!';
+GRANT Replication client ON *.* TO 'repl'@'%';
+GRANT Replication slave ON *.* TO 'repl'@'%';
+FLUSH PRIVILEGES;
 
 
 
