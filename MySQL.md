@@ -82,7 +82,7 @@ GRANT Replication client ON *.* TO 'repl'@'%';
 GRANT Replication slave ON *.* TO 'repl'@'%';   
 FLUSH PRIVILEGES;`
 
-**配置主库和备库**
+**配置主库和备库(重新启动)**
 * 主库  
 `vi /etc/my.cnf`  
 `+ log_bin=mysql-bin    
@@ -110,3 +110,12 @@ master_log_pos=0;`
 start slave;`
 
 `show processlist;`
+
+**克隆备库**
+* 冷备份
+
+* 热备份
+mysqlhotcopy、rsync、mysqldump、Xtrabackup
+
+**复制的管理和维护**
+percona-toolkit
