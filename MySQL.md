@@ -83,10 +83,24 @@ GRANT Replication slave ON *.* TO 'repl'@'%';
 FLUSH PRIVILEGES;`
 
 **配置主库和备库**
-* 主库
+* 主库  
 `vi /etc/my.cnf`  
-`+ log_bin=mysql-bin  
+`+ log_bin=mysql-bin    
    servier_id=1`
+* 备库  
+`vi /etc/my.cnf`  
+`+ log_bin=mysql-bin    
+   servier_id=1  
+   relay_log=/var/lib/mysql/mysql-relay-bin  
+   log_slave_updates=1  
+   read_only=1`  
+   
+**启动复制**
+* 主库
+
 * 备库
-
-
+`change master to master_host='192.168.3.220',  
+master_user='repl',  
+master_password='MyNewPass4!',  
+master_log_file='mysql-bin.000001',  
+master_log_pos=0;`  
