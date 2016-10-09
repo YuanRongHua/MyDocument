@@ -82,5 +82,11 @@ GRANT Replication client ON *.* TO 'repl'@'%';
 GRANT Replication slave ON *.* TO 'repl'@'%';   
 FLUSH PRIVILEGES;`
 
+**配置主库和备库**
+* 主库
+`vi /etc/my.cnf`  
+`+ log_bin=mysql-bin  
+   servier_id=1`
+* 备库
 
 
