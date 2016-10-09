@@ -95,12 +95,18 @@ FLUSH PRIVILEGES;`
    log_slave_updates=1  
    read_only=1`  
    
-**启动复制**
-* 主库
-
-* 备库
+**启动复制**  
+* 主库  
+`show slave status;
+show processlist;`
+* 备库  
 `change master to master_host='192.168.3.220',  
 master_user='repl',  
 master_password='MyNewPass4!',  
 master_log_file='mysql-bin.000001',  
 master_log_pos=0;`  
+
+`show slave status;
+start slave;`
+
+`show processlist;`
