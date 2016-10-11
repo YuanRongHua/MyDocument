@@ -9,3 +9,8 @@
 
 ## Apache Flink
 [Flink](http://flink.apache.org/) 是一个开源的针对批量数据和流数据的处理引擎，已经发展为 ASF 的顶级项目之一。Flink 的核心是一个提供了数据分发以及并行化计算的流数据处理引擎，已经支持了 API 化的 SQL 查询，包括图操作和机器学习的相关算法。
+
+## Pinpoint
+[Pinpoint](https://github.com/naver/pinpoint) 是用 Java 编写的 APM（应用性能管理）工具，用于大规模分布式系统。在 Dapper 之后，Pinpoint 提供了一个解决方案，以帮助分析系统的总体结构以及分布式应用程序的组件之间是如何进行数据互联的。
+8 安装agent是无侵入式的
+* 对性能的影响最小（只增加约3％资源利用率）
