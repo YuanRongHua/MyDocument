@@ -6,3 +6,6 @@
 
 ## Owasp Dependency Check
 [Owasp Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check) 对项目使用到的依赖进行安全扫描和监控是非常必要的，而将这一过程自动化能够进一步加强它的效果。这里以 OWASP Dependency Check 为例，介绍如何在项目构建阶段进行依赖扫描和监控。OWASP Dependency Check是一款开源免费的自动化依赖扫描工具，它由OWASP开发并维护，使用 NVD 和 CVE 作为漏洞数据源，自动识别依赖并扫描其是否存在安全问题。它提供Shell脚本、Ant插件、Maven插件和Jenkins插件。
+
+## Apache Flink
+[Flink](http://flink.apache.org/) 是一个开源的针对批量数据和流数据的处理引擎，已经发展为 ASF 的顶级项目之一。Flink 的核心是一个提供了数据分发以及并行化计算的流数据处理引擎，已经支持了 API 化的 SQL 查询，包括图操作和机器学习的相关算法。
